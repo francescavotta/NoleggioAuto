@@ -9,12 +9,12 @@ public class TestSimulator {
 	public static void main(String args[]) {
 		Simulator sim = new Simulator();
 		
-		sim.setNumCars(10) ;
-		sim.setClientFrequency(Duration.of(10, ChronoUnit.MINUTES)) ;
+		sim.setNumCars(10) ;//numero auto tot
+		sim.setClientFrequency(Duration.of(10, ChronoUnit.MINUTES)) ;//frequenza di arrivo dei clienti
 		
-		sim.run() ;
+		sim.run() ;//parte la simulazione
 		
-		int totClients = sim.getTotClients() ;
+		int totClients = sim.getTotClients() ;//output
 		int dissatisfied = sim.getDissatisfied() ;
 		
 		System.out.format("Arrived %d clients, %d were dissatisfied\n", 
